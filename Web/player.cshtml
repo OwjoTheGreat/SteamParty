@@ -6,8 +6,8 @@
     var steamId = Request.QueryString["steamid"];
 
     // Some cleaning up
-    steamId = steamId.Replace("http://steamcommunity.com/id/", "");
-    steamId = steamId.Replace("http://steamcommunity.com/profiles/", "");
+    steamId = steamId.Replace("https://steamcommunity.com/id/", "");
+    steamId = steamId.Replace("https://steamcommunity.com/profiles/", "");
     steamId = steamId.Replace("/", "");
 
     var api = new SteamApi(ConfigurationManager.AppSettings["ApiKey"]);
