@@ -19,7 +19,7 @@ namespace SteamParty.Core
 
         public string GetSteamIdFromName(string name)
         {
-            const string steamCommunityProfileUrl = "http://steamcommunity.com/id/{0}/?xml=1";
+            const string steamCommunityProfileUrl = "https://steamcommunity.com/id/{0}/?xml=1";
             var url = string.Format(steamCommunityProfileUrl, name);
 
             try
